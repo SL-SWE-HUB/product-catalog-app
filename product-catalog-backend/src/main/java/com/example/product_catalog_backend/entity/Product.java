@@ -1,4 +1,4 @@
-package com.example.product_catalog_backend.Entity;
+package com.example.product_catalog_backend.entity;
 
 import java.math.BigDecimal;
 
