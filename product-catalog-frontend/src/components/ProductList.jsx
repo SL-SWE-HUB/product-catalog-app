@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from 'react';
 
 function ProductList(){
     //State variables set-up
