@@ -1,0 +1,39 @@
+.product-list-container{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    padding: 1.5rem;
+    justify-content: center;
+}
+
+.loading-message,
+.error-message,
+.no-products-message{
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.2rem;
+    color: #838483
+}
+
+.error-message{
+    color: #f42f43;
+    font-weight: bold;
+}
+
+@media(max-width: 768px){
+    .product-list-container{
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+}
+
+@media(max-width: 480px){
+    .product-list-container{
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .product-card{
+        flex-basis: calc(100% - 1rem);
+    }
+}
