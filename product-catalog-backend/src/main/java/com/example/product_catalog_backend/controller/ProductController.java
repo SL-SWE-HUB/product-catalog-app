@@ -2,7 +2,6 @@ package com.example.product_catalog_backend.controller;
 
 import com.example.product_catalog_backend.entity.Product;
 import com.example.product_catalog_backend.service.ProductService;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
