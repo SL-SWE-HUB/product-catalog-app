@@ -1,8 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import { fetchProducts } from '../api/apiClient';
+import ProductCard from './ProductCard';
+import '../components/ProductList.css';
 
 function ProductList(){
     //State variables set-up
-    const[products, setProducts] = useState();
+    const[products, setProducts] = useState([]);
     const[loading, setLoading] = useState(true);
     const[error, setError] = useState(null);
 
@@ -15,26 +18,21 @@ function ProductList(){
                 setProducts(data);
             }catch(err){
                 setError(`Failed to load products ${err.message}`);
-                setProducts(); //Reset product array on error
+                setProducts([]); //Reset product array on error
                 console.error(err);
             }finally{
                 setLoading(false); //Reset loading to false, after each fetch attempt
             }
         };
         loadProducts();
-    },);
+    }, []);
 
-    //Display loading page when fetching data
-    if(loading){ 
-        return <div className="loading-message">Loading products, please wait...</div>
+    if (!products) { // If products is null or undefined
+    return <div className="loading-message">Initializing products...</div>; // Or some other placeholder
     }
 
-    if(error){
-        return <div className="error-message">{error}</div>
-    }
-
-    if(products.length === 0){
-        return <div className="no-products-message">No products found.</div>
+    if (products.length === 0 && !loading && !error) { // Checking !loading and !error to ensure it's not just an initial empty state during load
+    return <div className="no-products-message">No products found.</div>;
     }
 
     return (
