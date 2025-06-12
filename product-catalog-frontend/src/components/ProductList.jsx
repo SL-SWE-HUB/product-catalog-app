@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { fetchProducts } from '../api/apiClient';
 import ProductCard from './ProductCard';
+import '../components/ProductCard.css';
 import '../components/ProductList.css';
 
 function ProductList(){
