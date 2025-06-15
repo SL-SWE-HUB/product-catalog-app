@@ -52,6 +52,6 @@ public class ProductService {
         if(price == null){
             return "N/A";
         }
-        return "$" + price.setScale(2, RoundingMode.HALF_UP);
+        return String.format("$%.2f", price);
     }
 }
