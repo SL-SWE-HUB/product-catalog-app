@@ -6,14 +6,15 @@
 
 .App-header{
     background-color: #484d57;
-    padding: 20px;
     color: white;
     text-align: center;
+    height: 100px;
 }
 
 main{
     flex-grow: 1; /* Main content fill space */
     background-color: #639595;
+    padding-top: 50px;
 }
 
 .App-footer{
