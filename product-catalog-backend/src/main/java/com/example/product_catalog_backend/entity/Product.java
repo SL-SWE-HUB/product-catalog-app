@@ -2,6 +2,9 @@ package com.example.product_catalog_backend.entity;
 
 import java.math.BigDecimal;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -18,6 +21,8 @@ public class Product {
     private String name;
     private String description;
     private BigDecimal price;
+    @Column(name = "image_url")
+    private String imageUrl;
 
 
     public Product() {
@@ -48,6 +53,14 @@ public class Product {
         this.price = price;
     }
 
+    public String getImage_url() {
+        return imageUrl;
+    }
+
+    public void setImage_url(String image_url) {
+        this.imageUrl = image_url;
+    }
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -56,6 +69,7 @@ public class Product {
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         result = prime * result + ((description == null) ? 0 : description.hashCode());
         result = prime * result + ((price == null) ? 0 : price.hashCode());
+        result = prime * result + ((imageUrl == null) ? 0 : imageUrl.hashCode());
         return result;
     }
 
@@ -88,11 +102,17 @@ public class Product {
                 return false;
         } else if (!price.equals(other.price))
             return false;
+        if (imageUrl == null) {
+            if (other.imageUrl != null)
+                return false;
+        } else if (!imageUrl.equals(other.imageUrl))
+            return false;
         return true;
     }
 
     @Override
     public String toString() {
-        return "Product [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price + "]";
+        return "Product [id=" + id + ", name=" + name + ", description=" + description + ", price=" + price
+                + ", imageUrl=" + imageUrl + "]";
     }
 }
