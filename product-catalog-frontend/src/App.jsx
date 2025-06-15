@@ -9,14 +9,20 @@ function App() {
   return (
     <div className="App">
         <header className="App-header">
-            {/*<h1>Minimal E-commerce Product Catalog</h1>*/}
+            <nav className="main-navigation">
+              <ul className="main-navigation-list">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </nav>
         </header>
         <main>
             <ProductList />
             {/* placeholder for: ProductList Component */}
         </main>
         <footer className="App-footer">
-            <p>© 2025 SL-SWE-HUB</p>
+            <p> Application: Product Catalog <br/> © 2025 SL-SWE-HUB</p>
         </footer>
     </div> 
   );

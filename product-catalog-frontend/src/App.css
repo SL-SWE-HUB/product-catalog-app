@@ -5,10 +5,8 @@
 }
 
 .App-header{
-    background-color: #484d57;
-    color: white;
-    text-align: center;
-    height: 100px;
+    background-color: #ffffff;
+    height: 80px;
 }
 
 main{
@@ -25,4 +23,30 @@ main{
     border-top: 1px solid #fde5e5;
     color: #6e8090;
     font-size: 0.9rem;
+}
+
+.main-navigation{
+    padding-top:10px;
+}
+
+.main-navigation-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.main-navigation-list li{
+    display: inline;
+    float: left;
+}
+
+.main-navigation-list li:hover{
+    text-decoration: underline;
+}
+
+.main-navigation-list a{
+    display: block;
+    padding: 10px;
+    font-size: 30px;
 }
