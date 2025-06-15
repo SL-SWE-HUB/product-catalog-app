@@ -1,20 +1,18 @@
 .product-card{
-    border: 1px solid #ddd;
+    border: 5px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex; /* Use flexbox for internal layout /
-    flex-direction: column; / Stack image and info vertically */
-    transition: box-shadow 0.3s ease;
+    display: flex; 
+    flex-direction: column;
 }
 
 .product-card:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: rgb(227, 249, 255);
 }
 
 .product-image-placeholder{
-    height: 150px; /* Fixed height for placeholder */
+    width:100%;
     background-color: #eee;
     display: flex;
     align-items: center;
@@ -23,16 +21,15 @@
     font-weight: bold;
     border-radius: 4px;
     margin-bottom: 1rem;
-
 }
 
-/*.product-image{
+.product-image{
     width: 100%;
     max-height: 180px;
     object-fit: cover;
     border-radius: 4px;
     margin-bottom: 1rem;
-}*/
+}
 
 .product-info{
     flex-grow: 1;
@@ -45,12 +42,14 @@
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    text-align: center;
     color: #333;
 }
 
 .product-description{
     font-size: 0.9rem;
-    color: #666;
+    text-align: center;
+    color: #939191;
     flex-grow: 1; /* Push price to the bottom */
     margin-bottom: 0.75rem;
     line-height: 1.4;

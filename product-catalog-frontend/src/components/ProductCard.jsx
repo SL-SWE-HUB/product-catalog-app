@@ -11,6 +11,7 @@ function ProductCard({ product }){
             {/* Image Placeholder */}
             <div className="product-image-holder">
                 {/* <img/> */}
+                <img className="product-image" src={`http://localhost:8080${product.image_url}`}/>
             </div>
             <div className="product-info">
                 <h3 className="product-name">{product.name? `${product.name}` : "Unnamed Product"}</h3>
