@@ -3,11 +3,13 @@ package com.example.product_catalog_backend.service;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import java.math.BigDecimal;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@SpringBootTest
 class ProductServiceTest {
 
     private ProductService productService;
