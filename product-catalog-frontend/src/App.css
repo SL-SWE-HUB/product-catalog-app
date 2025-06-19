@@ -6,27 +6,25 @@
 
 .App-header{
     background-color: #ffffff;
-    height: 80px;
+    height: 50px;
+    border-bottom: 1px solid rgb(227, 226, 226);
 }
 
 main{
     flex-grow: 1; /* Main content fill space */
-    background-color: #639595;
+    background-color: #ffffff;
     padding-top: 50px;
 }
 
-.App-footer{
-    background-color: #cfe5fc;
-    padding: 1rem;
-    text-align: center;
-    margin-top: auto; /* Sets footer to the bottom */
-    border-top: 1px solid #fde5e5;
-    color: #6e8090;
-    font-size: 0.9rem;
+.header-logo{
+    float: left;
+    color: rgb(34, 33, 33);
+    margin: 0;
+    padding: 10px;
 }
 
 .main-navigation{
-    padding-top:10px;
+    padding-top:5px;
 }
 
 .main-navigation-list{
@@ -48,5 +46,15 @@ main{
 .main-navigation-list a{
     display: block;
     padding: 10px;
-    font-size: 30px;
+    font-size: 15px;
+}
+
+.App-footer{
+    background-color: #cfe5fc;
+    padding: 1rem;
+    text-align: center;
+    margin-top: auto; /* Sets footer to the bottom */
+    border-top: 1px solid #fde5e5;
+    color: #6e8090;
+    font-size: 0.9rem;
 }

@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
         <header className="App-header">
+          <h2 className='header-logo'>Product Catalog</h2>
             <nav className="main-navigation">
               <ul className="main-navigation-list">
                 <li><a>Home</a></li>
@@ -18,6 +19,10 @@ function App() {
             </nav>
         </header>
         <main>
+          <div className="none-yet-use-for-caroussel-or-simple-static-welcome-">
+            {/* Div Section for welcome image */}
+          </div>
+          
             <ProductList />
             {/* placeholder for: ProductList Component */}
         </main>
