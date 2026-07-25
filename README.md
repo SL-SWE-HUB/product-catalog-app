@@ -9,7 +9,7 @@
 ![Maven](https://img.shields.io/badge/Maven-3-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-16+-339933?style=for-the-badge&logo=node.js&logoColor=white)
 
-A robust full-stack application for managing and browsing a product catalog. It features a Spring Boot REST API backend with JPA/Hibernate ORM, a modern React 19 frontend powered by Vite, and PostgreSQL for persistent data storage. The entire application is containerized with Docker for seamless deployment.
+A full-stack application for managing and browsing a product catalog. It features a Spring Boot REST API backend with JPA/Hibernate ORM, a modern React 19 frontend powered by Vite, and PostgreSQL for persistent data storage. The entire application is containerized with Docker for deployment.
 
 ## Overview
 
